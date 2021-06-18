@@ -15,6 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to bottom, rgba(55, 55, 55, 0), rgb(55, 55, 55)), linear-gradient(rgba(55, 55, 55, 0.2), rgba(55, 55, 55, 0.2)), url(hatter.png);
+    background-size: cover;
 }
 
 .elem {
@@ -33,7 +34,7 @@ form {
     margin-bottom: 50px;
 }
 
-img {
+#logo {
     width: 36.1vh;
 }
 
@@ -56,7 +57,7 @@ img {
 }
 
 input {
-    width: 40vh;
+    width: 300px;
     display: block;
     padding: 10px;
     border: 2px solid #ef3e57;
@@ -90,7 +91,6 @@ button {
     border-radius: 10px;
     background: #ef3e57;
     color: white;
-    transition: 0.3s;
     font-family: robotor;
 }
 
