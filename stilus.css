@@ -1,73 +1,104 @@
-body {
-    height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(55, 55, 55, 0), rgb(55, 55, 55)), linear-gradient(rgba(55, 55, 55, 0.2), rgba(55, 55, 55, 0.2)), url("hatter.png");
-    background-size: cover;
+@font-face {
+    font-family: robotor;
+    src: url("robotor.ttf");
 }
 
-.kep {
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
     display: flex;
     justify-content: center;
-    padding-top: 150px;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(55, 55, 55, 0), rgb(55, 55, 55)), linear-gradient(rgba(55, 55, 55, 0.2), rgba(55, 55, 55, 0.2)), url(hatter.png);
 }
 
-img {
-    width: 60vh;
+.elem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 form {
+    width: 100%;
+}
+
+.logo {
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+img {
+    width: 36.1vh;
+}
+
+.fnev {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.jszo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 input {
-    width: 60vh;
+    width: 40vh;
     display: block;
-    margin-top: 20px;
     padding: 10px;
-    border: none;
     border: 2px solid #ef3e57;
     border-radius: 10px;
-    background-color: unset;
-    outline: none;
+    background: none;
     color: white;
-}
-
-input::placeholder {
-    color: white;
+    font-family: robotor;
 }
 
 input:focus {
-    border-color: white;
+    outline: none;
 }
 
-.jelszo {
-    position: relative;
+input::placeholder {
+    color: rgb(220, 220, 220);
 }
 
-#gomb {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    border: none;
-    border-radius: 0px 10px 10px 0px;
-    height: 100%;
-    width: 130px;
-    background-color: #ef3e57;
-    color: white;
+input::selection {
+    background-color: #ef3e557c;
 }
 
 .gomb {
-    width: 60vh;
-    margin-top: 50px;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    color: #ef3e57;
-    background-color: white;
+    display: flex;
+    justify-content: center;
 }
 
-.gomb:hover {
+button {
+    width: 42.5vh;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #ef3e57;
     color: white;
-    background-color: #ef3e57;
+    transition: 0.3s;
+    font-family: robotor;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: 0 0 0 3px #ef3e57;
+    transition: 0s;
 }
