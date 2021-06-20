@@ -11,7 +11,7 @@ var gomb = document.getElementById("gomb");
 
 function meretezes() {
     var meret = window.innerWidth + window.innerHeight;
-    document.body.style.width = window.outerWidth + "px";
+    document.body.style.width = window.innerWidth + "px";
     document.body.style.height = window.innerHeight + "px";
     console.log(window.outerHeight)
     if (szel != window.innerWidth) {
