@@ -3,13 +3,9 @@
     src: url("robotor.ttf");
 }
 
-html {
-    height: 100%;
-}
-
 body {
-    height: 100%;
-    width: 100%;
+    height: unset;
+    width: unset;
     margin: 0px;
     display: flex;
     justify-content: center;
@@ -57,7 +53,7 @@ form {
 }
 
 input {
-    width: 300px;
+    width: unset;
     display: block;
     padding: 10px;
     border: 2px solid #ef3e57;
